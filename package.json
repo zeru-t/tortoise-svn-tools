@@ -1,15 +1,25 @@
 {
   "name": "tortoise-svn-tools",
   "displayName": "Tortoise SVN Tools",
-  "description": "Tools for TortoiseSVN",
+  "description": "A set of tools to help with TortoiseSVN",
   "version": "0.0.1",
+  "publisher": "ztessema",
+  "repository": "https://github.com/zeru-t/tortoise-svn-tools",
+  "license": "MIT",
+  "author": {
+    "name": "ztessema",
+    "url": "https://github.com/zeru-t"
+  },
   "engines": {
     "vscode": "^1.97.0"
   },
+  "icon": "images/logo.png",
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+	"onStartupFinished"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "configuration": {
