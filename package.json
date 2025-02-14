@@ -2,7 +2,7 @@
   "name": "tortoise-svn-tools",
   "displayName": "Tortoise SVN Tools",
   "description": "A set of tools to help with TortoiseSVN",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "ztessema",
   "repository": "https://github.com/zeru-t/tortoise-svn-tools",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "Other"
   ],
   "activationEvents": [
-	"onStartupFinished"
+    "onStartupFinished"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -80,57 +80,57 @@
         "title": "Commit Changes"
       }
     ],
-	"menus": {
-		"editor/title/context": [
-			{
-				"command": "tortoise-svn-tools.showLog",
-				"group": "svn@1",
-				"when": "!config.TortoiseSVNTools.hideShowLog && isFileSystemResource"
-			},
-			{
-				"command": "tortoise-svn-tools.showDiff",
-				"group": "svn@2",
-				"when": "!config.TortoiseSVNTools.hideShowDiff && isFileSystemResource"
-			},
-			{
-				"command": "tortoise-svn-tools.getBlame",
-				"group": "svn@3",
-				"when": "!config.TortoiseSVNTools.hideGetBlame && isFileSystemResource"
-			},
-			{
-				"command": "tortoise-svn-tools.getLatest",
-				"group": "svn@4",
-				"when": "!config.TortoiseSVNTools.hideGetLatest && isFileSystemResource"
-			},
-			{
-				"command": "tortoise-svn-tools.commitChanges",
-				"group": "svn@5",
-				"when": "!config.TortoiseSVNTools.hideCommitChanges && isFileSystemResource"
-			}
-		],
-        "commandPalette": [
-            {
-                "command": "tortoise-svn-tools.showLog",
-                "when": "false"
-            },
-            {
-                "command": "tortoise-svn-tools.showDiff",
-                "when": "false"
-            },
-            {
-                "command": "tortoise-svn-tools.getBlame",
-                "when": "false"
-            },
-            {
-                "command": "tortoise-svn-tools.getLatest",
-                "when": "false"
-            },
-            {
-                "command": "tortoise-svn-tools.commitChanges",
-                "when": "false"
-            }
-        ]
-	}
+    "menus": {
+      "editor/title/context": [
+        {
+          "command": "tortoise-svn-tools.showLog",
+          "group": "svn@1",
+          "when": "!config.TortoiseSVNTools.hideShowLog && isFileSystemResource"
+        },
+        {
+          "command": "tortoise-svn-tools.showDiff",
+          "group": "svn@2",
+          "when": "!config.TortoiseSVNTools.hideShowDiff && isFileSystemResource"
+        },
+        {
+          "command": "tortoise-svn-tools.getBlame",
+          "group": "svn@3",
+          "when": "!config.TortoiseSVNTools.hideGetBlame && isFileSystemResource"
+        },
+        {
+          "command": "tortoise-svn-tools.getLatest",
+          "group": "svn@4",
+          "when": "!config.TortoiseSVNTools.hideGetLatest && isFileSystemResource"
+        },
+        {
+          "command": "tortoise-svn-tools.commitChanges",
+          "group": "svn@5",
+          "when": "!config.TortoiseSVNTools.hideCommitChanges && isFileSystemResource"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "tortoise-svn-tools.showLog",
+          "when": "false"
+        },
+        {
+          "command": "tortoise-svn-tools.showDiff",
+          "when": "false"
+        },
+        {
+          "command": "tortoise-svn-tools.getBlame",
+          "when": "false"
+        },
+        {
+          "command": "tortoise-svn-tools.getLatest",
+          "when": "false"
+        },
+        {
+          "command": "tortoise-svn-tools.commitChanges",
+          "when": "false"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
